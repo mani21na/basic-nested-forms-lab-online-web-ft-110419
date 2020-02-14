@@ -23,6 +23,10 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
 
+  def update
+    Recipe.update(recipe_params)
+  end
+
   private
 
   def recipe_params
